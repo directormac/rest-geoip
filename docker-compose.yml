@@ -1,14 +1,13 @@
-version: '3.4'
+version: '3.8'
 
 services:
   rest-geoip:
-    #image: twistedneil/eleven:main
     build:
       context: .
     ports:
       - 1323:1323
     volumes:
       - ./db:/opt/
-    env_file:
+#    env_file:
       # create this file
-      - .env.compose.production
+#      - .env.compose.production

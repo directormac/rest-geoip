@@ -5,7 +5,7 @@ services:
     build:
       context: .
     ports:
-      - 80:1323
+      - 1323:1323
     volumes:
       - ./db:/opt/
 #    env_file:
